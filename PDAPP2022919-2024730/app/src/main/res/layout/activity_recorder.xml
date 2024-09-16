@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFEFE"
+    tools:context=".ShortRecorder.ShortRecorder">
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="pre_page,recorderButton,next_page"
+        app:flow_horizontalGap="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline41"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline41"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recorderButton"
+        style="@style/logging_page_button"
+        android:layout_width="150dp"
+        android:layout_height="62dp"
+        android:text="開始錄音"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="436dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backhomeButton"
+        style="@style/logging_page_button"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_backhome"
+        android:backgroundTint="#289A93"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sentence"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:scrollbars="vertical"
+        android:textAlignment="textStart"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/page_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backhomeButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_page"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:background="@drawable/ic_start"
+        android:backgroundTint="#289A93"
+        android:rotation="0"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="790dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pre_page"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:background="@drawable/ic_start"
+        android:backgroundTint="#289A93"
+        android:rotation="-180"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="790dp" />
+
+    <TextView
+        android:id="@+id/page_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="1/4"
+        android:textColor="#7C000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/flow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sentence" />
+
+    <ImageView
+        android:id="@+id/recorder_state"
+        android:layout_width="109dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/group_139"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

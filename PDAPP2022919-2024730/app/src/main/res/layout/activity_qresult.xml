@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lineChart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeOrVHI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qhistory_text" />
+    <TextView
+        android:id="@+id/TestTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="測驗時間 : "
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/TestTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YYYY/HH/MM"
+        android:textColor="#2F9199"
+        android:textSize="24sp" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:constraint_referenced_ids="TestTime,TestTimeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EvaluationResult" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/homeOrVHI"
+        android:layout_width="184dp"
+        android:layout_height="65dp"
+        android:background="@drawable/logging_page_button_f"
+        android:text="繼續"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline12"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/information_button"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/group_123"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EvaluationResult"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:text="評估結果"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline59" />
+
+    <TextView
+        android:id="@+id/Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="10"
+        android:textColor="#CA0000"
+        android:textColorLink="#CA0000"
+        android:textSize="96sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TestTimeText" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Grade" />
+
+    <TextView
+        android:id="@+id/Fraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="分"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Grade"
+        app:layout_constraintStart_toEndOf="@+id/Grade" />
+
+    <TextView
+        android:id="@+id/qhistory_text"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:text="歷史紀錄"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

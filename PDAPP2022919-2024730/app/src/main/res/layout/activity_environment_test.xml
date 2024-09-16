@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Correction.EnvironmentTest">
+
+    <TextView
+        android:id="@+id/realTimeDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#289A93"
+        android:textSize="150dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline28" />
+
+    <TextView
+        android:id="@+id/realTimeDB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="dB"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/realTimeDB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline28" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextStepButton"
+        style="@style/logging_page_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        app:layout_constraintBottom_toTopOf="@+id/guideline29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline29" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <TextView
+        android:id="@+id/hintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="建議50dB以下進行練習"
+        android:textColor="#D50000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="當前環境"
+        app:layout_constraintBottom_toTopOf="@+id/guideline35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false">
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F1F1F1"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:constraint_referenced_ids="textView2,textView24,textView25,textView19,textView23"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正常(0-5分)"
+        android:textColor="#7C7C7C"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重度(21-40分)"
+        android:textColor="#BA0000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="輕度(6-10分)"
+        android:textColor="#00B37D"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VHI-10評估結果"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中度(11-20分)"
+        android:textColor="#E68A00"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

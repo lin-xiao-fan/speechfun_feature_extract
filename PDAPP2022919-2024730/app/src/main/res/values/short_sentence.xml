@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="short_sentence">
+        <item>這個超市的東西很便宜</item>
+        <item>我每天早上都要喝杯茶</item>
+        <item>因為下大雨比賽取消了</item>
+        <item>他的工作經驗十分豐富</item>
+        <item>這位醫生手術做得很好</item>
+        <item>樓下的叔叔喜歡聽歌劇</item>
+        <item>台南火車站有很多遊客</item>
+        <item>她學校規定學生穿制服</item>
+        <item>弟弟拿了相機出去照相</item>
+        <item>她的數學成績全班第一</item>
+        <item>下雨後馬路上積滿水坑</item>
+        <item>我們中秋節一起去賞月</item>
+        <item>他仔細幫病人檢查牙齒</item>
+        <item>這家書店今天正式營業</item>
+        <item>大家晚上睡覺要點蚊香</item>
+        <item>爸爸戴老花眼鏡看報紙</item>
+        <item>媽媽最喜歡做麻婆豆腐</item>
+        <item>婆婆今天炒菜放多鹽巴</item>
+        <item>我完全同意你們的觀點</item>
+        <item>她聽到落榜消息很傷心</item>
+        <item>最近的電費好像增加了</item>
+        <item>他一口氣喝了三碗豆漿</item>
+        <item>公園裡有很多人放風箏</item>
+        <item>全家人圍在一起包水餃</item>
+        <item>鄰居家經常有人打麻將</item>
+        <item>今天出門要記得帶雨傘</item>
+        <item>這裏風景美得像一幅畫</item>
+        <item>菜園裏的雜草長得很快</item>
+        <item>她用抹布把桌子擦乾淨</item>
+        <item>桌子上擺了一大盤瓜子</item>
+    </string-array>
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.pdapp2022919.Game.GameView
+        android:id="@+id/gameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/db_avg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_width="17dp"
+        android:layout_height="14dp"
+        android:alpha="0.3"
+        android:background="?attr/actionModeCloseDrawable"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+    <TextView
+        android:id="@+id/realtimedb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="realtimedb,db_avg_tv"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <TextView
+        android:id="@+id/hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="50dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <TextView
+        android:id="@+id/level_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continue_game_button"
+        style="@style/startgamebutton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text=" 繼續遊戲 "
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gameView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startGameButton"
+        style="@style/startgamebutton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="開始遊戲"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/gameView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/see_result_button"
+        style="@style/startgamebutton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text=" 進行後測 "
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gameView"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <TextView
+        android:id="@+id/gameIllustrate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/game_illustrate"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/startGameButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="30dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/guideline12"
+        app:srcCompat="@drawable/image_63__1_" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="29dp"
+        android:layout_height="22dp"
+        android:text="0枚"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+    <ImageView
+        android:id="@+id/overdB_hint"
+        android:layout_width="361dp"
+        android:layout_height="63dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        app:srcCompat="@drawable/group_154" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

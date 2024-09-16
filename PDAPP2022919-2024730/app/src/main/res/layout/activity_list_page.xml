@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77D1D1D1"
+    tools:context=".ListPage">
+
+
+  <TextView
+      android:id="@+id/practicelist"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/bold40sp"
+      android:textAlignment="center"
+      android:textColor="#6A6A6A"
+      android:textSize="40sp"
+      android:textStyle="normal"
+      app:layout_constraintBottom_toTopOf="@+id/guideline2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/back_main_page_button"
+      android:layout_width="49dp"
+      android:layout_height="43dp"
+      android:layout_marginStart="3dp"
+      android:layout_marginTop="5dp"
+      android:background="#00FFFFFF"
+      android:text="@string/k"
+      android:textColor="#8A8A8A"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      android:visibility="visible"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.036"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.013"
+      tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.15" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.5" />
+
+  <androidx.constraintlayout.helper.widget.Flow
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:orientation="vertical"
+      app:constraint_referenced_ids="voice_practice_button,long_practice_button,keep_long_button,shortrecorder_Button,high_low_practice_button"
+      app:flow_verticalGap="15dp"
+      app:layout_constraintEnd_toStartOf="@+id/guideline7"
+      app:layout_constraintHorizontal_bias="0.418"
+      app:layout_constraintStart_toStartOf="@+id/guideline7"
+      app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/voice_practice_button"
+      android:layout_width="313dp"
+      android:layout_height="110dp"
+      android:background="@drawable/group_104"
+      android:backgroundTint="@color/button_feedback"
+      android:backgroundTintMode="multiply"
+      tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+      tools:layout_editor_absoluteX="206dp"
+      tools:layout_editor_absoluteY="268dp" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/keep_long_button"
+      android:layout_width="325dp"
+      android:layout_height="115dp"
+      android:background="@drawable/group_106"
+      android:visibility="visible"
+      tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+      tools:layout_editor_absoluteX="206dp"
+      tools:layout_editor_absoluteY="130dp" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/shortrecorder_Button"
+      android:layout_width="313dp"
+      android:layout_height="110dp"
+      android:background="@drawable/group_114"
+      android:backgroundTint="@color/button_feedback"
+      android:backgroundTintMode="multiply"
+      android:visibility="visible"
+      tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+      tools:layout_editor_absoluteX="206dp"
+      tools:layout_editor_absoluteY="142dp" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/high_low_practice_button"
+      android:layout_width="325dp"
+      android:layout_height="115dp"
+      android:background="@drawable/group_105"
+      android:visibility="invisible"
+      tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+      tools:layout_editor_absoluteX="206dp"
+      tools:layout_editor_absoluteY="130dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

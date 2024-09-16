@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Store.StorePage">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buy_button"
+        style="@style/red_button"
+        android:layout_width="197dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:text="買菜"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin_not_enough"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_main_page_button3"
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        android:text="@string/k"
+        android:textColor="#8A8A8A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蔬果攤"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline60" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="每次兩枚金幣"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buy_button" />
+
+    <TextView
+        android:id="@+id/coin_not_enough"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="*您的金幣不足*"
+        android:textColor="#D50000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow5" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="416dp"
+        android:layout_height="306dp"
+        android:background="@drawable/image_63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/coin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/image_63__1_"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:constraint_referenced_ids="coin,coin_count_text,textView17"
+        app:flow_horizontalGap="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="枚"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="476dp" />
+
+    <TextView
+        android:id="@+id/coin_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textSize="60sp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline57"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="170dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/basket"
+        android:layout_width="86dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/image_96"
+        android:text="菜 籃"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

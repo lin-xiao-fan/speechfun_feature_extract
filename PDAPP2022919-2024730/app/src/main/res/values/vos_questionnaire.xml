@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="vos_questionnaire">
+        <item>你認為你平常說話的聲音如何?</item>
+        <item>在吵雜的環境中，你的聲音被了解的程度會受到多大的限制?</item>
+        <item>在過去兩週中，你的聲音干擾你的社交或工作到什麼程度?</item>
+        <item>當你吞嚥食物、飲料而嗆到，或因此而咳嗽的次數如何?</item>
+        <item>當你說話時，會因為發聲問題而察覺到自己聲音緊繃嗎?</item>
+    </string-array>
+    <string-array name="vos_answer1">
+        <item>1 很好</item>
+        <item>2 好 </item>
+        <item>3 普通</item>
+        <item>4 不好</item>
+        <item>5 沒有聲音</item>
+    </string-array>
+    <string-array name="vos_answer2">
+        <item>1 很多限制</item>
+        <item>2 一點限制 </item>
+        <item>3 不會限制</item>
+    </string-array>
+    <string-array name="vos_answer3_5">
+        <item>1 沒有</item>
+        <item>2 一點 </item>
+        <item>3 中等</item>
+        <item>4 很多</item>
+        <item>5 非常多</item>
+    </string-array>
+    <string-array name="vos_answer4">
+        <item>1 總是</item>
+        <item>2 常常 </item>
+        <item>3 有時</item>
+        <item>4 一點</item>
+        <item>5 從不</item>
+    </string-array>
+</resources>

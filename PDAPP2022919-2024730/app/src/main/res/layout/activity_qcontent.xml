@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Finish_Button1"
+        android:layout_width="144dp"
+        android:layout_height="52dp"
+        android:background="@drawable/finish_button"
+        android:text="完成"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.985" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextQelesButton"
+        android:layout_width="43dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:rotation="180"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lastQelesButton"
+        android:layout_width="43dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/NumofQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/10"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+    <TextView
+        android:id="@+id/questionnaire_caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.015" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+
+    <RadioGroup
+        android:id="@+id/answer_button_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline65">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/AnswerButton1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/qanswer_button"
+            android:button="@drawable/qanswer_button"
+            android:text="Button"
+            android:textAlignment="center"
+            android:textColor="@color/qanser_button_text"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/AnswerButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/qanswer_button"
+            android:button="@drawable/qanswer_button"
+            android:text="RadioButton"
+            android:textAlignment="center"
+            android:textColor="@color/qanser_button_text"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/AnswerButton3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/qanswer_button"
+            android:button="@drawable/qanswer_button"
+            android:text="RadioButton"
+            android:textAlignment="center"
+            android:textColor="@color/qanser_button_text"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/AnswerButton4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/qanswer_button"
+            android:button="@drawable/qanswer_button"
+            android:text="RadioButton"
+            android:textAlignment="center"
+            android:textColor="@color/qanser_button_text"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/AnswerButton5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/qanswer_button"
+            android:button="@drawable/qanswer_button"
+            android:text="RadioButton"
+            android:textAlignment="center"
+            android:textColor="@color/qanser_button_text"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/NumofQ" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

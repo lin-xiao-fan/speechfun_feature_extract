@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game.PretestCaption">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_main_page_button9"
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        android:text="@string/k"
+        android:textColor="#8A8A8A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/caption_ok"
+        style="@style/logging_page_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="知道了"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline53"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:id="@+id/questionnaire_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="前測說明"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline54"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:id="@+id/caption_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="綠燈亮起，請以您最大的音量持續「啊」三 秒鐘，紅燈亮起時停止，重複三次。"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionnaire_caption" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

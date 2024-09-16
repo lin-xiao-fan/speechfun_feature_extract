@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_history_page_k"
+        style="@style/logging_page_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textColor="@color/word1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline83"
+        app:layout_constraintEnd_toStartOf="@+id/guideline85"
+        app:layout_constraintStart_toStartOf="@+id/guideline84" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/keeplongList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline83"
+        app:layout_constraintEnd_toStartOf="@+id/guideline85"
+        app:layout_constraintStart_toStartOf="@+id/guideline84"
+        app:layout_constraintTop_toBottomOf="@+id/time_keep_long_text" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <TextView
+        android:id="@+id/time_keep_long_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keep_long_text" />
+
+    <TextView
+        android:id="@+id/keep_long_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="持續發聲"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+</androidx.constraintlayout.widget.ConstraintLayout>

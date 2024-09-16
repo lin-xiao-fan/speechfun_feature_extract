@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="VHI_10_question">
+        <item> 我的嗓音很難讓人聽清楚。</item>
+        <item> 在吵雜環境裏、别人難以明白我說的話。</item>
+        <item> 我聲音的問題限制我的個人和社交生活。 </item>
+        <item> 我的聲音使我感到在交談中插不上嘴。 </item>
+        <item> 我聲音的問題使我 減少收入。 </item>
+        <item> 我感到好像要用力才可發出聲音。 </item>
+        <item> 我聲音的清晰度反覆無常。  </item>
+        <item> 我聲音的問題使我感到苦惱。  </item>
+        <item> 我的聲音使我感到身體有缺陷。 </item>
+        <item> 別人問我:「你的聲音出了什麼問題?」 </item>
+    </string-array>
+    <string-array name="VHI_10_answer">
+        <item>0 沒有</item>
+        <item>1 很少</item>
+        <item>2 有時</item>
+        <item>3 經常</item>
+        <item>4 總是</item>
+    </string-array>
+</resources>

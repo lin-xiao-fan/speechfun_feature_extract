@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Speech Fun</string>
+    <string name="bold40sp">練習清單</string>
+    <string name="white">儲存</string>
+    <string name="k">←</string>
+    <string name="name">姓名：</string>
+    <string name="phone">電話：</string>
+    <string name="email">e-mail：</string>
+    <string name="pretest">前測</string>
+    <string name="post_test_db">%2.0f</string>
+    <string name="pretest_db"> %2.0f</string>
+    <string name="now_db">%2.0f</string>
+    <string name="play_how_long">%s</string>
+    <string name="start_play_time">%s~%n%s</string>
+    <string name="level_difficulty">%s</string>
+    <string name="game_illustrate">請發出比前測更大的音量來控制青菜\n小心別掉下懸崖囉~!</string>
+    <string name="short_sentence"></string>
+    <string name="questionnaire_caption">請選擇更符合您最近一周狀態的答案。</string>
+
+
+    <string name="volume_game">音量練習</string>
+    <string name="short_line_game">短句練習</string>
+    <string name="make_sure_del">確認刪除</string>
+    <string name="ok">是</string>
+    <string name="del_success">刪除成功</string>
+    <string name="del_fail">刪除失敗</string>
+    <string name="file_is_not_exist">檔案不存在</string>
+    <string name="no">否</string>
+    <string name="sign_out"><b>登出</b></string>
+    <string name="sign_in"><b>登入</b></string>
+    <string name="make_sure_upload">確認上傳</string>
+    <string name="upload_success">上傳成功</string>
+    <string name="upload_failed">上傳失敗</string>
+    <string name="back_home">首頁</string>
+    <string name="confirm">確認</string>
+    <string name="cancel">取消</string>
+    <string name="password_error">密碼錯誤</string>
+
+    <string name="num_of_q">%d/%d</string>
+    <string name="clock_format">%02d:%02d</string>
+    <string name="VHI_10_Information"></string>
+
+    <string name="coin_not_enough">*您的金幣不足*</string>
+    <string name="vegetable_sold_out">菜賣完囉!</string>
+
+    <string name="cabbage">萵苣</string>
+    <string name="watermelon">西瓜</string>
+    <string name="banana">香蕉</string>
+    <string name="lemon">檸檬</string>
+    <string name="guava">芭樂</string>
+    <string name="passion_fruit">百香果</string>
+    <string name="green_apple">青蘋果</string>
+    <string name="longan">龍眼</string>
+    <string name="purple_cabbage">紫甘藍</string>
+    <string name="orange">橘子</string>
+    <string name="green_grape">綠葡萄</string>
+    <string name="tomato">番茄</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="keep_long">請發出最長的「%s」音</string>
+    <string name="keep_long2">開始前請記得深呼吸</string>
+</resources>

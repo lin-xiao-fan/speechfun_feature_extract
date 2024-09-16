@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.SignUpPage">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_first_page_button4"
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        android:text="@string/k"
+        android:textColor="#8A8A8A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="86dp"
+        android:layout_height="67dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:srcCompat="@drawable/dtx_logo_black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/enter_Button"
+        style="@style/logging_page_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text='註冊'
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textviex_profile"
+        android:ems="10"
+        android:hint="密碼"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:paddingStart="15dp"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+    <EditText
+        android:id="@+id/editTextPatientID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textviex_profile"
+        android:ems="10"
+        android:hint="帳號"
+        android:inputType="numberPassword|phone"
+        android:padding="8dp"
+        android:paddingStart="15dp"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <TextView
+        android:id="@+id/text_singup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="註冊"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/flow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:constraint_referenced_ids="editTextPatientID,editTextTextPersonName"
+        app:flow_verticalGap="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline26"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <TextView
+        android:id="@+id/hintText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="*您已註冊過*"
+        android:textColor="#D50000"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

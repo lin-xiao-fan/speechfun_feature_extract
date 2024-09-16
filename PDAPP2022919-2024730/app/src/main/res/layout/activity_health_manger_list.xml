@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".HealthManager.HealthMangerList">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintGuide_percent="0.42"
+        tools:visibility="invisible" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintGuide_percent="0.14"
+        tools:visibility="invisible" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/personal_button"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/group_112"
+        android:backgroundTint="@color/button_feedback"
+        android:backgroundTintMode="multiply"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/alarmclock_button"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/group_109"
+        android:backgroundTint="@color/button_feedback"
+        android:backgroundTintMode="multiply"
+        android:visibility="gone"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/QRecord_button"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/group_135"
+        android:backgroundTint="@color/button_feedback"
+        android:backgroundTintMode="multiply"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/history_Button"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/group_108"
+        android:backgroundTint="@color/button_feedback"
+        android:backgroundTintMode="multiply"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/predict_button"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/test"
+        android:backgroundTint="@color/button_feedback"
+        android:backgroundTintMode="multiply"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_main_page_button4"
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="@color/button_feedback"
+        android:backgroundTintMode="multiply"
+        android:text="@string/k"
+        android:textColor="#8A8A8A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="personal_button,alarmclock_button,QRecord_button,history_Button,predict_button"
+        app:flow_horizontalGap="20dp"
+        app:flow_verticalGap="20dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toTopOf="@+id/guideline36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline36" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="健康管理"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline52"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline52" />
+</androidx.constraintlayout.widget.ConstraintLayout>

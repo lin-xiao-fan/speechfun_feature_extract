@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable"
+    tools:context=".FirstPage">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/DTxLabLogo"
+        android:layout_width="86dp"
+        android:layout_height="67dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline20"
+        app:srcCompat="@drawable/dtx_logo_black" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="256dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline23"
+        app:srcCompat="@drawable/closespeech" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_button3"
+        style="@style/logging_page_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/finish_button"
+        android:backgroundTintMode="src_in"
+        android:text="返回"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DTxLabLogo"
+        app:srcCompat="@drawable/dtx_logo_black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_in_button"
+        style="@style/logging_page_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="登入"
+        android:textColor="@color/word1"
+        android:visibility="visible"
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_up_button"
+        style="@style/logging_page_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="註冊"
+        android:textColor="@color/word1"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="sign_in_button,sign_up_button"
+        app:flow_verticalGap="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
