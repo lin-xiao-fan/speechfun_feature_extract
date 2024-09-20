@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phq_9_question">
+        <item>做事時提不起勁或沒有樂趣</item>
+        <item>感到心情低落、沮喪或絕望</item>
+        <item>入睡困難、睡不安穩或睡眠過多</item>
+        <item>感覺疲倦或沒有活力</item>
+        <item>食慾不振或吃太多</item>
+        <item>覺得自己很糟 —或覺得自己很失敗，或讓自己或家人失望</item>
+        <item>對事物專注有困難， 例如閱讀報紙或看電視時</item>
+        <item>動作或說話速度緩慢，或正好相反煩躁或坐立不安</item>
+        <item>有不如死掉或用某種方式傷害自己的念頭</item>
+    </string-array>
+    <string-array name="phq_9_answer">
+        <item>完全沒有</item>
+        <item>幾天</item>
+        <item>一半以上的天數</item>
+        <item>幾乎每天</item>
+    </string-array>
+</resources>

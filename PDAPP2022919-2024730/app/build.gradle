@@ -1,0 +1,168 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id("com.chaquo.python")
+}
+
+android {
+    namespace 'com.example.pdapp2022919'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.dtx804lab.pdapp2022919"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments["room.schemaLocation"] =
+                        "$projectDir/schemas"
+            }
+        }
+        vectorDrawables {
+            useSupportLibrary true
+        }
+        ndk {
+
+            abiFilters.addAll("arm64-v8a", "x86_64")
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/io.netty.versions.properties'
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+        viewBinding true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.1'
+    }
+
+    flavorDimensions += "pyVersion"
+    productFlavors {
+        create("py308") { dimension = "pyVersion" }
+
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+    ndkVersion ndkVersion
+}
+
+
+
+dependencies {
+    implementation files('src/main/libs/opensmile-debug.aar')
+    //implementation(name: 'opensmile-debug', ext: 'aar')
+    //implementation 'com.arthenica:mobile-ffmpeg-full:4.4'
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+    //implementation 'com.arthenica:ffmpeg-kit-full:4.5.1-1'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.wear.tiles:tiles-material:1.1.0-alpha04'
+    implementation 'com.google.android.gms:play-services-vision:9.4.0+'
+    implementation 'com.dtx804lab:dtx_netty_lib:0.3.1'
+    implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+    implementation 'io.netty:netty-all:4.1.75.Final'
+    implementation 'androidx.work:work-runtime:2.7.1'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation files("libs/TarsosDSP-Android-2.4.jar")
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.7.0'
+    implementation 'androidx.activity:activity-compose:1.8.2'
+    implementation platform('androidx.compose:compose-bom:2023.08.00')
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.ui:ui-graphics'
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    implementation 'androidx.compose.material3:material3'
+    implementation 'androidx.navigation:navigation-fragment:2.6.0'
+    implementation 'androidx.navigation:navigation-ui:2.6.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+
+
+//    implementation 'com.google.firebase:firebase-inappmessaging:20.1.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation platform('androidx.compose:compose-bom:2023.08.00')
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+    debugImplementation 'androidx.compose.ui:ui-tooling'
+    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    def room_version = "2.5.0"
+    def lifecycle_version = "2.2.0"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    androidTestImplementation "androidx.room:room-testing:$room_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha2'
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    implementation 'com.applandeo:material-calendar-view:1.9.0-rc03'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+}
+
+
+chaquopy {
+    defaultConfig {
+        buildPython("C:/Users/USER/AppData/Local/Programs/Python/Python308/python.exe")
+
+
+        pip{
+            install("pandas")
+            install("numpy")
+            install("joblib" )
+            install("scikit-learn" )
+
+            install("python_speech_features")
+            install("googleads")
+            install("opensmile")
+
+            //install("cython")
+            //install("pysptk")
+
+            //install("disvoice")
+            //install("praat-parselmouth" )
+
+        }
+
+    }
+    productFlavors {
+        getByName("py308") { version = "3.8" }
+
+    }
+    sourceSets { }
+
+
+}
+
+

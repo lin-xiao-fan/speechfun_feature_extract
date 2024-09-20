@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShortRecorder.ShortRecorederChoose"
+    tools:layout_editor_absoluteX="-21dp"
+    tools:layout_editor_absoluteY="24dp">
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/back_main_page_button8"
+      android:layout_width="49dp"
+      android:layout_height="43dp"
+      android:layout_marginTop="5dp"
+      android:background="#00FFFFFF"
+      android:text="@string/k"
+      android:textColor="#8A8A8A"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      android:visibility="visible"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.036"
+      app:layout_constraintStart_toStartOf="@+id/guideline87"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.013"
+      tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+  <TextView
+      android:id="@+id/textView9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="60sp"
+      android:text="模式選擇"
+      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/guideline4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/word_Button"
+      style="@style/logging_page_button"
+      android:layout_width="320dp"
+      android:layout_height="100dp"
+      android:text="單字"
+      android:textColor="@color/word1"
+      android:textSize="65sp"
+      tools:layout_editor_absoluteX="86dp"
+      tools:layout_editor_absoluteY="189dp" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/santance_Button"
+      style="@style/logging_page_button"
+      android:layout_width="320dp"
+      android:layout_height="100dp"
+      android:text="短句"
+      android:textColor="@color/word1"
+      android:textSize="65sp"
+      tools:layout_editor_absoluteX="95dp"
+      tools:layout_editor_absoluteY="286dp" />
+
+  <androidx.constraintlayout.helper.widget.Flow
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:constraint_referenced_ids="word_Button,santance_Button"
+      app:flow_horizontalAlign="center"
+      app:flow_horizontalStyle="packed"
+      app:flow_verticalGap="32dp"
+      app:flow_verticalStyle="spread_inside"
+      app:layout_constraintBottom_toTopOf="@+id/guideline38"
+      app:layout_constraintEnd_toStartOf="@+id/guideline88"
+      app:layout_constraintStart_toStartOf="@+id/guideline87"
+      app:layout_constraintTop_toTopOf="@+id/guideline38" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.15" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline38"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.5" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline87"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.05" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline88"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

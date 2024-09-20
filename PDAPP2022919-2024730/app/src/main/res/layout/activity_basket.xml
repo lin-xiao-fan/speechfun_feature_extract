@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_112135">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/logging_page_button_f"
+        android:text="返回"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_button"
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        android:text="@string/k"
+        android:textColor="#8A8A8A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline71">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:isScrollContainer="false"
+                android:orientation="horizontal"
+                app:flow_maxElementsWrap="2"
+                app:flow_wrapMode="chain">
+
+                <RadioButton
+                    android:id="@+id/f1"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/cabbage"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1"
+                    tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+                <RadioButton
+                    android:id="@+id/f2"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/image_99"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1" />
+
+                <RadioButton
+                    android:id="@+id/f3"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/image_100"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1" />
+
+                <RadioButton
+                    android:id="@+id/f4"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/image_102"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1" />
+
+                <RadioButton
+                    android:id="@+id/f5"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/image_105"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1" />
+
+                <RadioButton
+                    android:id="@+id/f6"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/image_83"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1" />
+
+                <RadioButton
+                    android:id="@+id/f7"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/image_94"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1" />
+
+                <RadioButton
+                    android:id="@+id/f8"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/image_98"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1" />
+
+                <RadioButton
+                    android:id="@+id/f9"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/image_96__1_"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/f10"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/image_107"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1" />
+
+                <RadioButton
+                    android:id="@+id/f11"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/image_76"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1" />
+
+                <RadioButton
+                    android:id="@+id/f12"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/image_106"
+                    android:backgroundTint="@color/vegetable_enable"
+                    android:backgroundTintMode="multiply"
+                    android:button="@drawable/vegetable_check"
+                    android:buttonTint="@color/vegetable_check1" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

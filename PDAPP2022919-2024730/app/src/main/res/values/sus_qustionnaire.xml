@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="SUS_questionnaire">
+        <item> 我認為我會願意經常使用這個系統。</item>
+        <item> 我發現這個系統沒必要這麼複雜。</item>
+        <item> 我認為這個系統容易使用。 </item>
+        <item> 我想我需要有人幫助才能使用這個系統。 </item>
+        <item> 我覺得這個系統的功能整合得很好。 </item>
+        <item> 我覺得這個系統有太多不一致的地方。 </item>
+        <item> 我可以想像大部份的人很快就可以學會使用這個系統。  </item>
+        <item> 我覺得這個系統使用起來很麻煩。  </item>
+        <item> 我很有自信能使用這個系統。 </item>
+        <item> 我需要學會很多額外的資訊，才能使用這個系統。 </item>
+    </string-array>
+    <string-array name="SUS_answer">
+        <item>1 非常不同意</item>
+        <item>2 不同意</item>
+        <item>3 沒意見</item>
+        <item>4 同意</item>
+        <item>5 非常同意</item>
+    </string-array>
+</resources>

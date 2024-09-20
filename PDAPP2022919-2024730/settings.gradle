@@ -1,0 +1,38 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven {
+            name = "TarsosDSP repository"
+            url = "https://mvn.0110.be/releases"
+        }
+        maven {
+            url = uri("https://maven.pkg.github.com/dtx-804-lab/dtx_netty_lib")
+            credentials {
+                Properties properties = new Properties()
+                properties.load(new File(rootDir.absolutePath + "/local.properties").newDataInputStream())
+
+                username = properties.getProperty('PUBLISHING_USERNAME') ?: System.getenv("USERNAME")
+                password = properties.getProperty('PUBLISHING_TOKEN') ?: System.getenv("TOKEN")
+            }
+        }
+
+        flatDir {
+            dirs 'src/main/libs'  //
+        }
+
+    }
+}
+rootProject.name = "PDAPP2022919"
+include ':app'
+
