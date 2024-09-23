@@ -1,1 +1,3 @@
 可以輸出MFCC特徵
+如果有錯誤 需要先把test.py中的opensmile註解
+MFCC特徵會輸出到TAG:Features的LOG中
